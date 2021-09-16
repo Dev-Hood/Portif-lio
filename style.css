@@ -11,7 +11,7 @@ body{
     background-color: rgba(255, 255, 255, 0.753);
 }
 .tela-inicio{
-    animation: rotate 0.8s ease-out;
+    animation: rotate 1s ease-out;
 }
 @keyframes rotate {
     0%{
@@ -129,10 +129,27 @@ nav ul li a{
     position: absolute;
     right: 25%;
     bottom: 28%;
+    border-bottom: #009CFF 6px solid;
+    border-radius: 1%;
 }
+
 .minha-foto{
     width: 100%;
-    box-shadow: #009CFF 4px 4px;
+    transform: translateY(4px);
+    animation: pular 4s ease-in 2s infinite alternate-reverse;
+}
+@keyframes pular {
+    0%{
+        transform: translateY(3px);
+    }
+    30%{
+        transform: translateY(-35px);
+    }
+    50%{
+        transform: translateY(3px)
+    }
+    
+
 }
 
     /*========TEXTOS==================*/
