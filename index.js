@@ -1,3 +1,4 @@
+/* =============INTERAÇÃO FORMAS FLUIDAS========================================= */
 const forma = document.getElementsByClassName('fluid')
 const container = document.querySelector('.tela-inicio')
 
@@ -13,3 +14,14 @@ container.addEventListener('mouseleave',()=>{
     forma[0].style.transform = `translate(100px, 100px) skew(${0}deg) scale(1.5)`;
     forma[1].style.transform = `translate(100px, 100px) skew(${0}deg) `;
 })
+
+/* =============ANIMAÇÃO EFEITO DIGITANDO========================================= */
+const apresentacao = document.getElementById("apresentacao");
+
+(()=>{
+    let texto = apresentacao.innerText.split('');
+    apresentacao.innerHTML='';
+    texto.forEach((letra,i)=>{
+            setTimeout(()=>apresentacao.innerHTML+=letra,40*i)
+    })
+})();
