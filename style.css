@@ -47,8 +47,8 @@ nav ul li{
     display: inline-block;
 }
 nav ul li a{
-    font-family:'Marvel', sans-serif;
-    font-weight: bolder;
+    font-family:'Nunito', sans-serif;
+    font-size: 1.2rem;
     letter-spacing: 3px;
     text-decoration: none;
     color: #009CFF;
@@ -57,12 +57,22 @@ nav ul li a{
 .logo{
     width: min-content;
     float: left;
+    height: 50px;
+    width: 55px;
 }
 #logo{
-    object-fit: scale-down;
-    width: 70px;
-    height: 50px;
-    padding-bottom: 10px;
+    text-align: center;
+    width: 50px;
+    height: 90%;
+    margin-top: 2.3px;
+    margin-bottom: 2.5px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    font-size: 2rem;
+    color: white;
+    background-color: #009CFF;
+    border-radius: 30%;
+    box-shadow: rgb(130, 213, 238) -2px 2px 3px ;
 }
 /*===================================SLIDE BAR======================================*/
 
@@ -135,18 +145,18 @@ nav ul li a{
 
 .minha-foto{
     width: 100%;
-    transform: translateY(4px);
+    transform: translateY(3.5px);
     animation: pular 4s ease-in 2s infinite alternate-reverse;
 }
 @keyframes pular {
     0%{
-        transform: translateY(3px);
+        transform: translateY(3.5px);
     }
     30%{
         transform: translateY(-35px);
     }
     50%{
-        transform: translateY(3px)
+        transform: translateY(3.5px)
     }
     
 
