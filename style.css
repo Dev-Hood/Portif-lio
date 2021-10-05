@@ -9,6 +9,8 @@
 }
 body{
     background-color: rgba(255, 255, 255, 0.753);
+    overflow-x: hidden; 
+    overflow-y: scroll;
 }
 .tela-inicio{
     animation: rotate 1s ease-out;
@@ -29,6 +31,10 @@ body{
     position: fixed;
     top:0;
     border-radius: 5px;
+    z-index: 100;
+}
+.menu-hamburger{
+    display: none;
 }
 header{
     margin: auto;
@@ -91,8 +97,8 @@ nav ul li a{
     width: 100%;
 }
 .bolha-1{
-    width: 15%;
-    height: 30%;
+    width: 20vw;
+    height: 30vh;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -114,7 +120,7 @@ nav ul li a{
     width: 50px;
     height: 20px;
     position: absolute;
-    top: 30%;
+    top: 45%;
     left: 45%;
 }
 .triangulo2{
@@ -204,4 +210,77 @@ nav ul li a{
     50%{
         opacity: 1;
     }
+}
+.conhecimentos{
+    
+}
+
+/*==================RESPONSIVIDADE==================*/
+
+@media screen and (max-width: 640px) {
+    .header nav ul{
+        display: none;  
+    }
+    .header{
+        width: 100vw;
+    }
+    .menu{
+        width: 100vw;
+    }
+    .menu-hamburger{
+        display: block;
+        position: relative;
+        width: min-content;
+        height: 35px;
+        top: 5px;
+        right: 8px;
+        margin: 0;
+    }
+    .slidebar{
+        height: max-content;
+        width: 100vw;
+    }
+    .textos-inicial{
+        padding-top: 30%;
+        padding-left: 0;
+        height: min-content;
+        width: 100vw;
+    }
+    .textos-inicial h3{
+        display: inline-block;
+        text-align: center;
+        width: 100%;  
+    }
+    .textos-inicial h1{
+        padding: 5%;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .textos-inicial h2{
+        padding: 5%;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    .foto{
+        position: relative;
+        left: auto;
+        right: auto;
+        top: 30px;
+        display: flex;
+        width: 100vw;
+        height: min-content;
+        justify-content: center;
+        margin-bottom: 20px;
+        
+    }
+    .minha-foto{
+        width: 300px;
+    }
+    .formas{
+        display: inline-block;
+        opacity: 0.2;
+        z-index: -1;
+    }
+
+    
 }
