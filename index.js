@@ -16,12 +16,24 @@ container.addEventListener('mouseleave',()=>{
 })
 
 /* =============ANIMAÇÃO EFEITO DIGITANDO========================================= */
-const apresentacao = document.getElementById("apresentacao");
+if(window.innerWidth>640){
+    const apresentacao = document.getElementById("apresentacao");
+    (()=>{
+        let texto = apresentacao.innerText.split('');
+        apresentacao.innerHTML='';
+        texto.forEach((letra,i)=>{
+                setTimeout(()=>apresentacao.innerHTML+=letra,40*i)
+        })
+    })();
+}
 
-(()=>{
-    let texto = apresentacao.innerText.split('');
-    apresentacao.innerHTML='';
-    texto.forEach((letra,i)=>{
-            setTimeout(()=>apresentacao.innerHTML+=letra,40*i)
-    })
-})();
+document.querySelectorAll('.caixas').forEach((el,i) =>{
+        el.addEventListener('mouseover', (event) => {
+            document.getElementsByTagName('h2')[i+1].style.color = '#009CFF'
+        })
+        el.addEventListener('mouseleave', (event) => {
+            document.getElementsByTagName('h2')[i+1].style.color = ''
+        })
+    }
+);
+

@@ -1,6 +1,82 @@
+body::-webkit-scrollbar {
+    width: 10px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: white;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #009CFF;    /* color of the scroll thumb */
+    border-radius: 50px;       /* roundness of the scroll thumb */
+    border: 2px solid white;  /* creates padding around scroll thumb */
+  }
+
 .conhecimentos{
-    position: relative;
+    padding-top: 2%;
     top: 20px;
     height: 100vh;
     width: 100vw;
+    background-color:#009CFF ;
+}
+.conhecimentos h1{
+    margin-left: auto;
+    margin-right: auto;
+    width: min-content;
+    height: min-content;
+    border-bottom: white 2px solid;
+    font-family: 'Nunito', sans-serif;
+    font-size: 3rem;
+    color: white;
+}
+.conhecimentos h2{
+    padding-top: 8px;
+    font-family: 'Quicksand', sans-serif; 
+    text-align: center;
+    transition: all 0.3s ease-in;
+}
+.conhecimentos h2 i{
+    margin-right: 6px;
+}
+.conhecimentos p{
+    font-family: 'Quicksand', sans-serif; 
+    padding: 2% 2% 2%;
+    font-size: 1rem;
+}
+.caixas-conhecimento{
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.caixas{
+    border-radius: 20px;
+    width: 50%;
+    height: 110px;
+    margin-top: 30px;
+    background-color:rgb(255, 255, 255);
+    box-shadow: 8px 8px 3px 3px #00d7ff;
+    transition: all 0.3s ease-in;
+}
+.caixas:hover{
+    transform: scale(1.1);
+    border-radius: 0px;
+}
+
+.conhecimento-2{
+    margin-left: 20%;
+}
+.conhecimento-4{
+    margin-left: 20%;
+}
+.conhecimento-6{
+    margin-left: 20%;
+}
+
+
+/*==================RESPONSIVIDADE==================*/
+
+@media screen and (max-width: 640px) {
+    .conhecimentos h1{
+        font-size: 2rem;
+    }
 }
