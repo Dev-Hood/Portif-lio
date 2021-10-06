@@ -42,6 +42,7 @@ body::-webkit-scrollbar {
     font-family: 'Quicksand', sans-serif; 
     padding: 2% 2% 2%;
     font-size: 1rem;
+    text-align: justify;
 }
 .caixas-conhecimento{
     width: 100%;
@@ -75,8 +76,30 @@ body::-webkit-scrollbar {
 
 /*==================RESPONSIVIDADE==================*/
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1090px) {
+    
+    .conhecimentos{
+        height: max-content;
+        padding-bottom: 20%;
+        width: 100vw;       
+    }
     .conhecimentos h1{
         font-size: 2rem;
+        
+    }
+    .conhecimentos p{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .caixas{
+        display: inline-block;
+        margin-left: 10vw;
+        margin-top: 50px;
+        height: calc(270px - 10%);
+        width: 80%;
+    }
+    .caixas-conhecimento{
+        width: 100%;
+        padding: 0;
     }
 }
